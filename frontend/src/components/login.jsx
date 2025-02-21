@@ -33,7 +33,7 @@ function Login() {
   // Redirect when login is successful
   useEffect(() => {
     if (data && data.status === "success") {
-      navigate("/dashboard"); // Redirect to the dashboard page if login is successful
+      navigate("/home/dashboard"); // Redirect to the dashboard page if login is successful
     }
   }, [data, navigate]);
   

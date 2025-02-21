@@ -96,3 +96,25 @@ exports.login = function (req, res) {
         res.send("index");
     }
 };
+
+//------------------- Dashboard --------------------------
+exports.dashboard = function (req, res) {
+    var userId = req.session.userId;
+    var user = req.session.user;
+    var id = req.query.id;
+        var sql = "SELECT * FROM users ;";
+        db.query(sql, function (err, result) {
+            console.log(result);
+            console.log(err)
+            res.send({ activeuserName: activeuserName, users: result });
+        });
+};
+
+//----------------- Get Users List ----------------
+exports.usersList = function (req, res) {
+    var selectQuery = "SELECT * FROM users;";
+    db.query(selectQuery, function (err, result) {
+        res.send({ result: result });
+        console.log(result);
+    });
+};

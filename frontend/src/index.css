@@ -14,6 +14,12 @@ body {
   overflow: auto;
   margin-top: 75px;
 }
+.bgSetting{
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white;
+  margin: auto;
+  padding: 5px;
+}
 .welcometxt { 
   margin-top: 5px;
   color: white;
@@ -64,4 +70,186 @@ input:focus{
   margin-top:15px;
   margin-left: 5px;
   margin-right: 5px;
+}
+#calendar {
+  background-color:antiquewhite;
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+ 
+}
+.fc-toolbar.fc-header-toolbar {
+  margin: 1em;
+}
+.container {
+  max-height: 100%;
+  align-content: center;
+}
+#usersList {
+  margin-top: -15px;
+}
+ul {
+  list-style-type: none;
+}
+ul.listItem {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white;
+  margin-top:0px;
+  padding-top:5px;
+  padding-bottom:5px;
+  overflow: auto;
+}
+ul li {
+  margin: 5px;
+}
+#navbar {
+  width:inherit;
+  height:inherit;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.listTitle {
+  background-color: antiquewhite;
+  text-align: center;
+}
+.userexit {
+  font-size:15px;
+  color:red;
+}
+.useravilable {
+  font-size: 15px;
+  color: green;
+}
+#statusList li {
+  color: cornflowerblue;
+  cursor:pointer;
+}
+#usersList li {
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+.donate-now {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+  display: block;
+}
+
+.donate-now li {
+      float: left;
+      margin: 0 5px 0 0;
+      width: 100px;
+      height: 40px;
+      position: relative;
+}
+
+.donate-now label,
+.donate-now input {
+  display:block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.donate-now input[type="radio"] {
+      opacity: 0.01;
+      z-index: 100;
+}
+
+.donate-now input[type="radio"]:checked + label,
+.Checked + label {
+              background: yellow;
+              color: black;
+   } 
+
+.donate-now label {
+  padding: 5px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.dynamicTable table, .dynamicTable th, .dynamicTable td {
+  border: 1px solid black;
+  padding: 5px;
+}
+.dynamicTable th {
+  background-color: #dddddd;
+}
+.badge {
+  float: right;
+}
+#bulkUpdateStatus {
+  display:none;
+}
+#homeSettingBtn {
+  display:none;
+}
+#dashboardrightpanel {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+#dashboard_searchOptions {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: white;
+}
+#main_searchCategory {
+  display: inline;
+}
+#main_searchDate {
+  display: inline;
+}
+#l_searchDate {
+  display: inline;
+}
+.leavesHeader {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white;
+  margin-top: 5px;
+}
+.leavesCountLabel {
+  font-weight: bold;
+}
+.leaveCounts {
+  display: inline-block;
+  margin: 15px;
+  padding: 5px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;  
+}
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+#leavesDetailsTable {
+  margin: 15px;
+}
+#leavesDetailsTableDiv {
+  background-color: antiquewhite;
+}
+#displayArea img {
+  width: 10%;
+}
+
+/* ----------- Profile Page CSS --------- */
+.profilerightpanel{
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+#profileform input, #profileform select, #profileform textarea {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white;
 }
