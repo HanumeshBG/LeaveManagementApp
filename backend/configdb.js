@@ -1,5 +1,5 @@
 // JavaScript source code
-var mysql = require('mysql');
+var mysql = require('mysql2');
 
 var connection = mysql.createConnection({
     host: "localhost",
@@ -8,12 +8,12 @@ var connection = mysql.createConnection({
     database:"myusers"
 });
 
-connection.connect(function(err) {
-    if (err) {
-        console.log(err);
-    } else {
-        console.log("Database connected successfully...");
-    }
-});
+// connection.connect(function(err) {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log("Database connected successfully...");
+//     }
+// });
 
 module.exports = connection;

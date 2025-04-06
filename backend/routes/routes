@@ -11,6 +11,6 @@ router.get("/home/dashboard", users.dashboard);// get call for dashboard page
 router.get("/home/users", users.usersList);// get call for getting users list.
 router.get('/home/dashboard/loadstatus', events.loadLeaveStatusCount); //To load total leave count based on status.
 // router.get("/home/applyleave", users.applyleave);// Call for leave form
-router.post("/home/applyleave", users.applyleave);// Post Call for leave form
+router.post("/home/applyleave", events.applyleave);// Post Call for leave form
 
 module.exports = router;

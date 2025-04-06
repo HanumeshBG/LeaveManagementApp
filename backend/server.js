@@ -2,11 +2,13 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const connection = require("./configdb");
+const commonFunction = require('./routes/commonFunctions');
 const session = require('express-session');
 const routes = require('./routes/routes');
 const cors = require('cors');
 
 var port = process.env.port || 3010 ;
+global.cf = commonFunction;
 global.db = connection;
 
 //middlewares
