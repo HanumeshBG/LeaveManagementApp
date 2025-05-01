@@ -44,12 +44,12 @@ const ApplyLeave = () => {
     };
 
     // Fetch data based on the URL and options
-    const { data:fetchedData, loading, error } = useFetch(url, options);
+    const { data:fetchedData } = useFetch(url, options);
 
-    // Redirect when login is successful
+    // Redirect when leave applied is successful
     useEffect(() => {
-        if (fetchedData && fetchedData.status == "success") {
-            navigate("/home/dashboard"); // Redirect to the dashboard page if login is successful
+        if (fetchedData && fetchedData.status === "success") {
+            navigate("/home/dashboard"); // Redirect to the dashboard page if leave applied is successful
         }
     }, [fetchedData]);
 
